@@ -467,10 +467,9 @@
   margin: 0 auto;
   padding: 12px 24px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px 18px;
+  justify-content: center;
+  text-align: center;
   font-size: 0.85rem;
   color: var(--enigma-text-muted);
 }
@@ -479,7 +478,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  gap: 8px 18px;
 }
 
 /* Responsive layouts for tablets & phones (natural vertical scrolling) */
@@ -508,10 +508,6 @@
     overflow: visible;
   }
 
-  .spotlight-column {
-    order: -1;
-  }
-
   .cards-list {
     overflow: visible;
   }
@@ -525,18 +521,29 @@
     padding-right: 14px;
   }
 
+  .topbar__inner {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
   .brand-lockup__logo {
     height: 34px;
   }
 
   .topbar__actions {
-    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     gap: 6px;
   }
 
   .topbar__actions .btn {
-    padding: 7px 10px;
-    font-size: 0.8rem;
+    padding: 8px;
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  .topbar__actions .btn span {
+    display: none;
   }
 
   .event-card {

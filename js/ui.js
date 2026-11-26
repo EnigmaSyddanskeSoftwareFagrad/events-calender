@@ -29,14 +29,14 @@ export function renderTopbarButtons(container, config) {
   const socialButtons = (config.socials || [])
     .map((s) => {
       const key = String(s.id || s.name || '').toLowerCase();
-      return `<a class="btn" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${ICONS[key] || ''}<span>${escapeHtml(s.name)}</span></a>`;
+      return `<a class="btn" href="${escapeHtml(s.url)}" target="_blank" rel="noopener" aria-label="${escapeHtml(s.name)}" title="${escapeHtml(s.name)}">${ICONS[key] || ''}<span>${escapeHtml(s.name)}</span></a>`;
     })
     .join('');
 
   const calHref = config.calendarUrl || 'https://calendar.google.com';
   container.innerHTML = `
     ${socialButtons}
-    <a class="btn" id="calendar-btn" href="${escapeHtml(calHref)}" target="_blank" rel="noopener">${ICONS.calendar}<span>Calendar</span></a>
+    <a class="btn" id="calendar-btn" href="${escapeHtml(calHref)}" target="_blank" rel="noopener" aria-label="Calendar" title="Calendar">${ICONS.calendar}<span>Calendar</span></a>
   `;
 }
 
