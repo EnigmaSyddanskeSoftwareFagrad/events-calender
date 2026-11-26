@@ -1,0 +1,161 @@
+:root {
+  --enigma-navy: #1A2B40;
+  --enigma-navy-deep: #121E2E;
+  --enigma-navy-border: rgba(255, 255, 255, 0.12);
+  --enigma-orange: #F28727;
+  --enigma-amber: #FFAD01;
+  --enigma-text: #F4F7FB;
+  --enigma-text-muted: #B6C3D4;
+  --enigma-text-soft: #8798AE;
+  --enigma-shadow: 0 20px 50px rgba(8, 14, 24, 0.45);
+  --enigma-glow: 0 0 0 2px rgba(242, 135, 39, 0.9), 0 16px 38px rgba(242, 135, 39, 0.24);
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --font-sans: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--enigma-navy);
+  color: var(--enigma-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-image:
+    radial-gradient(circle at 12% 10%, rgba(242, 135, 39, 0.12), transparent 36%),
+    radial-gradient(circle at 88% 82%, rgba(141, 64, 70, 0.16), transparent 42%),
+    linear-gradient(180deg, #1A2B40 0%, #142234 100%);
+  background-attachment: fixed;
+}
+
+a {
+  color: var(--enigma-amber);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Status & category badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.badge-upcoming {
+  background: rgba(242, 135, 39, 0.2);
+  color: var(--enigma-amber);
+  border: 1px solid rgba(255, 173, 1, 0.45);
+}
+
+.badge-today {
+  background: rgba(60, 198, 138, 0.2);
+  color: #6EE7B7;
+  border: 1px solid rgba(60, 198, 138, 0.5);
+}
+
+.badge-past {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--enigma-text-soft);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badge-category {
+  background: rgba(141, 64, 70, 0.35);
+  color: #F7D8DB;
+  border: 1px solid rgba(141, 64, 70, 0.65);
+}
+
+.badge-partner {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--enigma-text);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Empty state when current.json has no events */
+.empty-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(32px, 5vw, 64px) 24px;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 50% 25%, rgba(242, 135, 39, 0.18), transparent 55%),
+    linear-gradient(160deg, rgba(31, 51, 76, 0.95), rgba(18, 30, 46, 0.98));
+  border: 1px solid rgba(242, 135, 39, 0.35);
+  box-shadow: var(--enigma-shadow);
+}
+
+.empty-panel__logo {
+  width: 78px;
+  height: auto;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 8px 22px rgba(242, 135, 39, 0.35));
+}
+
+.empty-panel h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.empty-panel p {
+  margin: 0;
+  max-width: 48ch;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--enigma-text-muted);
+}
+
+/* Custom thin scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(18, 30, 46, 0.5);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(242, 135, 39, 0.45);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 173, 1, 0.75);
+}

@@ -1,0 +1,35 @@
+{
+  "organization": {
+    "name": "ENIGMA",
+    "location": "Softwarezonen (Ø20-604b-1)",
+    "email": "enigma@org.sdu.dk"
+  },
+  "timezone": "Europe/Copenhagen",
+  "calendarUrl": "https://calendar.google.com",
+  "socials": [
+    {
+      "id": "discord",
+      "name": "Discord",
+      "handle": "discord.gg/5t9FZAS",
+      "url": "https://discord.gg/5t9FZAS"
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "handle": "fb.me/EnigmaSSF",
+      "url": "https://fb.me/EnigmaSSF"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "handle": "Enigma - SDU",
+      "url": "https://www.linkedin.com/company/enigma-sdu"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "handle": "EnigmaSyddanskeSoftwareFagrad",
+      "url": "https://github.com/EnigmaSyddanskeSoftwareFagrad"
+    }
+  ]
+}

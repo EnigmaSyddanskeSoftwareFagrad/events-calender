@@ -1,0 +1,103 @@
+{
+  "events": [
+    {
+      "id": "e26-braetspilscafe-ida",
+      "title": "Board Game Café x IDA",
+      "date": "2026-10-07",
+      "startTime": "16:00",
+      "endTime": "20:00",
+      "location": "Softwarezonen (Ø20-604b-1)",
+      "category": "Social",
+      "collaborators": ["IDA"],
+      "summary": "Dinner, snacks, and board games in Softwarezonen in collaboration with IDA.",
+      "description": "Bring your fellow students for an evening packed with classic and modern board games, dinner, and snacks sponsored by IDA. All software students are welcome.",
+      "image": null,
+      "signupUrl": null
+    },
+    {
+      "id": "e26-llm-workflows-ida",
+      "title": "Integrating LLMs in Workflows x IDA",
+      "date": "2026-11-10",
+      "startTime": "16:30",
+      "endTime": "19:00",
+      "location": "SDU Odense",
+      "category": "Academic workshop",
+      "collaborators": ["IDA"],
+      "summary": "Academic workshop on practical use and integration of LLMs in development workflows.",
+      "description": "Technical talk and hands-on workshop in collaboration with IDA focusing on how modern language models can be integrated safely and effectively into software workflows. Dinner and snacks included.",
+      "image": null,
+      "signupUrl": null
+    },
+    {
+      "id": "e26-game-jam",
+      "title": "Game Jam with Spiltek",
+      "date": "2026-11-13",
+      "endDate": "2026-11-15",
+      "startTime": "16:00",
+      "endTime": "15:00",
+      "location": "Softwarezonen (Ø20-604b-1)",
+      "category": "Academic & Social",
+      "collaborators": ["Spiltek", "IDA", "PROSA"],
+      "summary": "Week 46 weekend game jam where teams build games from scratch with prizes and food.",
+      "description": "A full weekend of creativity, coding, and game development together with Spiltek, IDA, and PROSA. Join with or without a team, build a game over the weekend, and compete for prizes.",
+      "image": null,
+      "signupUrl": null
+    },
+    {
+      "id": "e26-dnd-oneshot",
+      "title": "Dungeons & Dragons – One Shot",
+      "date": "2026-11-21",
+      "startTime": "13:00",
+      "endTime": "21:00",
+      "location": "Softwarezonen (Ø20-604b-1)",
+      "category": "Social",
+      "collaborators": [],
+      "summary": "Full-day adventure with dice and pizza for both beginners and experienced players.",
+      "description": "Dive into a ready-to-play D&D one-shot adventure led by Enigma's DMs. Pre-generated characters are available, pizza is served for dinner, and both newcomers and veterans are welcome.",
+      "image": null,
+      "signupUrl": null
+    },
+    {
+      "id": "e26-karaoke-studenterhuset",
+      "title": "Karaoke at Studenterhuset",
+      "date": "2026-11-26",
+      "startTime": "19:00",
+      "endTime": "23:30",
+      "location": "Studenterhuset Odense",
+      "category": "Social",
+      "collaborators": [],
+      "summary": "Sing along or cheer from the bar at Enigma's karaoke night at Studenterhuset.",
+      "description": "A festive Thursday evening at Studenterhuset where we warm up our vocal cords and hang out across all semesters with drink tickets and great vibes.",
+      "image": null,
+      "signupUrl": null
+    },
+    {
+      "id": "e26-braetspilscafe-dec",
+      "title": "Board Game Café",
+      "date": "2026-12-10",
+      "startTime": "16:00",
+      "endTime": "20:00",
+      "location": "Softwarezonen (Ø20-604b-1)",
+      "category": "Social",
+      "collaborators": ["IDA"],
+      "summary": "A cozy December evening with board games, dinner, and snacks before exam prep.",
+      "description": "Enigma invites all software students to a relaxed evening of board games, card games, dinner, and snacks in Softwarezonen. Bring your study group or drop by solo.",
+      "image": null,
+      "signupUrl": "https://fb.me/EnigmaSSF"
+    },
+    {
+      "id": "e26-julefrokost",
+      "title": "Christmas Party (Julefrokost)",
+      "date": "2027-01-29",
+      "startTime": "17:30",
+      "endTime": "23:59",
+      "location": "Nedenunder (SDU)",
+      "category": "Social",
+      "collaborators": ["IDA", "Bankdata"],
+      "summary": "Annual Christmas party with dinner, gift exchange, prizes, and celebration across all years.",
+      "description": "As tradition goes, we wrap up the fall semester with Enigma's big Christmas party at Nedenunder in collaboration with IDA and Bankdata. Look forward to great food, pakkeleg, prizes, and a party with the whole program.",
+      "image": null,
+      "signupUrl": "https://fb.me/EnigmaSSF"
+    }
+  ]
+}

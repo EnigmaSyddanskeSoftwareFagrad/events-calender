@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events Calendar</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-  <h1>Hello, World!</h1>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand-lockup">
+          <img class="brand-lockup__logo" src="assets/logo-icon.svg" alt="ENIGMA" />
+        </div>
+
+        <nav class="topbar__actions" id="topbar-actions" aria-label="Links and Calendar"></nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section id="empty-host" class="hidden" aria-live="polite"></section>
+
+      <section class="workspace-grid" id="workspace-grid">
+        <aside class="events-column" aria-label="Event list">
+          <div class="controls-bar">
+            <div class="filter-group" role="group" aria-label="Filter events">
+              <button type="button" class="chip-btn is-active" id="filter-upcoming">Upcoming</button>
+              <button type="button" class="chip-btn" id="filter-all">All</button>
+            </div>
+            <span class="events-count" id="events-count"></span>
+          </div>
+
+          <div class="cards-list" id="cards-list"></div>
+        </aside>
+
+        <article class="spotlight-column" aria-live="polite">
+          <div class="event-media event-media--logo" id="event-media"></div>
+          <div class="spotlight-details" id="spotlight-details"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span><strong>ENIGMA</strong> · Software Engineering Student Council at SDU</span>
+        <div class="footer-links" id="footer-links"></div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
